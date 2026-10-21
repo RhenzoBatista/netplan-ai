@@ -1,0 +1,8 @@
+[
+  {"query": "subcarrier spacing numerology mu", "expected_keywords": ["subcarrier spacing", "numerology"]},
+  {"query": "radio link failure timer T310", "expected_keywords": ["T310"]},
+  {"query": "SSB periodicity synchronization signal block", "expected_keywords": ["SS/PBCH", "SSB"]},
+  {"query": "TDD UL DL slot configuration pattern", "expected_keywords": ["tdd-UL-DL", "TDD"]},
+  {"query": "network slicing S-NSSAI", "expected_keywords": ["S-NSSAI", "slice"]},
+  {"query": "non-public network SNPN", "expected_keywords": ["SNPN", "non-public"]}
+]

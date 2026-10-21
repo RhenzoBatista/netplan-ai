@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "netplan-ai"
+version = "2.0.0"
+description = "Multi-agent LLM planner for 4G/5G network deployments, grounded in 3GPP specs"
+requires-python = ">=3.11"
+dependencies = [
+  "langchain>=1.0",
+  "langchain-openai>=1.0",
+  "langchain-community>=0.4",
+  "langchain-text-splitters>=1.0",
+  "langgraph>=1.0",
+  "faiss-cpu>=1.8",
+  "rank-bm25>=0.2.2",
+  "pypdf>=4",
+  "tavily-python>=0.5",
+  "fastapi>=0.115",
+  "uvicorn[standard]>=0.30",
+  "pydantic>=2.7",
+  "pydantic-settings>=2.3",
+  "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+aws = ["langchain-aws>=1.0", "boto3"]
+dev = ["pytest>=8", "httpx>=0.27", "ruff>=0.6", "reportlab>=4"]
+
+[tool.setuptools.packages.find]
+include = ["netplan*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["B008"]  # FastAPI Depends() in defaults is the documented pattern

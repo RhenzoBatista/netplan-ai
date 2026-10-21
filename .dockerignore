@@ -1,0 +1,5 @@
+.env
+.venv
+data/index
+evals/results
+.git

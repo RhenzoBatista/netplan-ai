@@ -1,0 +1,14 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+data/index/
+data/*.db
+data/specs/*.pdf
+evals/results/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+.ipynb_checkpoints/
+data/**/*.db
+data/specs/*.py
