@@ -50,7 +50,8 @@ The v1 report also suggested 15 kHz subcarrier spacing for n78. It is legal but 
 ## Screenshots
 
 ![Swagger UI](docs/swagger.png)
-![Plan response with guardrail findings](docs/plan_response.png)
+![Plan response with RF link budget](docs/plan_response.png)
+![Guardrail findings, latency and token usage](docs/plan_findings.png)
 
 ## Quick start
 
